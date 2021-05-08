@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2E2C2C"
+    android:configChanges="orientation"
+    android:orientation="vertical"
+    tools:context=".Fragments.ImageMusicFragment"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:id="@+id/buttonPanel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:layout_marginTop="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <ImageButton
+            android:id="@+id/addImage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_plus"
+            />
+        <Button
+            android:id="@+id/addMusic"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="@android:color/transparent"
+            android:text="Добавить музыку"/>
+
+        <Button
+            android:id="@+id/apply"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="@android:color/transparent"
+            android:text="Загрузить"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+        <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8" />
+
+
+</LinearLayout>

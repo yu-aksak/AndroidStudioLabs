@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2E2C2C"
+    android:configChanges="orientation"
+    android:orientation="vertical"
+    tools:context=".Fragments.AuthorizationFragment"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/authorizationText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeMaxTextSize="50sp"
+        android:autoSizeStepGranularity="2sp"
+        android:gravity="center|center"
+        android:text="Авторизация"
+        />
+
+    <LinearLayout
+        android:id="@+id/loginPanel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:layout_below="@+id/authorizationText"
+        android:layout_marginTop="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/login"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:hint="введите логин"
+            android:textColorHint="#FFFF"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/passwordPanel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:layout_below="@+id/loginPanel"
+        android:layout_marginTop="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autoSizeMaxTextSize="25sp"
+            android:autoSizeMinTextSize="4sp"
+            android:autoSizeStepGranularity="2sp"
+            android:autoSizeTextType="uniform"
+            android:hint="введите пароль"
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFF"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05">
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/databaseSwitch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:textColor="@color/white"
+            android:text="SQLite"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:text="FireBase"
+            android:gravity="right"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/passwordPanel"
+        android:text="Вход"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeMaxTextSize="50sp"
+        android:autoSizeStepGranularity="2sp"
+        />
+
+    <Button
+        android:id="@+id/registration"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:layout_below="@+id/Panel"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeMaxTextSize="50sp"
+        android:autoSizeStepGranularity="2sp"
+        android:background="@android:color/transparent"
+        android:text="Регистрация"/>
+    <Button
+        android:id="@+id/enterVK"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:layout_below="@+id/Panel"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeMaxTextSize="50sp"
+        android:autoSizeStepGranularity="2sp"
+        android:background="@android:color/transparent"
+        android:text="VK"/>
+
+</LinearLayout>

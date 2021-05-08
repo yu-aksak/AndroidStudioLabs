@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/ic_gallery"/>
+
+    <TextView
+        android:id="@+id/authorItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Автор"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleItem"/>
+
+    <TextView
+        android:id="@+id/titleItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Название"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/image"
+        app:layout_constraintTop_toBottomOf="@id/authorItem"
+        app:layout_constraintBottom_toTopOf="@+id/descriptionItem"/>
+
+    <TextView
+        android:id="@id/descriptionItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Описание"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/image"
+        app:layout_constraintTop_toBottomOf="@+id/titleItem"
+        app:layout_constraintBottom_toTopOf="@id/dateItem" />
+
+    <TextView
+        android:id="@+id/dateItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Дата"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/image"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionItem"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

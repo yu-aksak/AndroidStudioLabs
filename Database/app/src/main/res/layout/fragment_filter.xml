@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:configChanges="orientation"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        android:gravity="center|center"
+        android:text="Фильтрация"/>
+
+    <CheckBox
+        android:id="@+id/dateChecker"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:text="По дате"/>
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:visibility="invisible">
+        <RadioButton
+            android:id="@+id/up"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+
+            android:textColor="@color/black"
+            android:text="по возрастанию"/>
+        <RadioButton
+            android:id="@+id/down"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+
+            android:textColor="@color/black"
+            android:text="по убыванию"/>
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/authorChecker"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:text="По автору:"/>
+
+    <TextView
+        android:id="@+id/chosenAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.07"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:gravity="center|center"
+        android:text=""/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/authors"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/apply"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:background="@android:color/transparent"
+        android:text="Применить"/>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:background="@android:color/transparent"
+        android:text="Сбросить"/>
+
+    <Button
+        android:id="@+id/back2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:background="@android:color/transparent"
+        android:text="Назад"/>
+</LinearLayout>

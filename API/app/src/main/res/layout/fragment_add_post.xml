@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:configChanges="orientation"
+    android:orientation="vertical"
+    tools:context=".Fragments.AddPostFragment">
+
+    <LinearLayout
+        android:id="@+id/buttonPanel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_marginTop="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/addImage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_plus"
+            />
+        <Button
+            android:id="@+id/addMusic"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:layout_weight="0.3"
+            android:background="@android:color/transparent"
+            android:text="Добавить музыку"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:hint="Название"
+        android:textColorHint="@color/black"/>
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:hint="Описание"
+        android:textColorHint="@color/black"/>
+    <Button
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:textColor="@color/black"
+        android:background="@android:color/transparent"
+        android:text="Загрузить"
+        android:visibility="invisible"/>
+    <Button
+        android:id="@+id/back1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:background="@android:color/transparent"
+        android:text="НАЗАД"/>
+</LinearLayout>

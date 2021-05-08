@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2E2C2C"
+    android:configChanges="orientation"
+    android:orientation="vertical"
+    tools:context=".Fragments.PostFragment"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2">
+
+        <ImageButton
+            android:id="@+id/imageMusic"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:id="@+id/titlePost"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:text="Название"
+            android:textColor="@color/white"
+            android:textSize="25dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/descriptionPost"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:autoLink="web"
+        android:text="Описание"
+        android:textColor="@color/white"
+        android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@android:color/transparent"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeMaxTextSize="50sp"
+        android:autoSizeStepGranularity="2sp"
+        android:text="Назад"/>
+
+
+</LinearLayout>
